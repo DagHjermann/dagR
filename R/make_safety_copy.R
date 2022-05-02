@@ -63,5 +63,5 @@ make_safety_copy <- function(fn, length_file_extension = 3){
   } else {
     cat("File doesn't exist - no need to make safety copy. \n")
   }
-  NULL
+  invisible(NULL)
 }

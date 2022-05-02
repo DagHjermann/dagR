@@ -1,12 +1,13 @@
 #' Make a safety copy of a file
 #'
-#' Makes a safety copy of a file with "_OLD01" in the file name, before you are
+#' Makes a safety copy of a file with "_OLD" and a number in the file name, before you are
 #' overwriting an existing file. For instance, say that you have made a file
 #' called 'my_precious_figure.png' in the 'figures' directory. If you call
 #' \code{make_safety_copy("figures/my_precious_figure.png")}, a safety copy named
 #' \code{'my_precious_figure_OLD1.png'} will be made. However, if the 'OLD01' name
-#' already has been used, the copy will be named 'my_precious_figure_OLD2.png',
-# etcetera.
+#' already has been used, the copy will be named 'my_precious_figure_OLD2.png'. If that
+#' name also has been used, 'my_precious_figure_OLD3.png' will be used, etcetera.
+#'
 #'
 #'
 #' @param fn The file name
